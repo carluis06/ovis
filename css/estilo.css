@@ -249,3 +249,34 @@ nav li li{
 	display: block;
 	text-decoration: none;
 }
+
+/* ESTILO PARA MULTIMEDIA  */
+.contenedor-videos{
+	text-align: center;
+}
+
+.contenedor-video1{
+	border-radius: 10px;
+	background: #f9efef;
+	padding: 15px;
+	width: 45%;
+	margin: 10px 10px;
+	float: left;
+}
+.contenedor-video1 h2{
+	color: #F47920;
+	margin: 20px 0px;
+}
+
+.contenedor-video2{
+	border-radius: 10px;
+	background: #f9efef;
+	padding: 15px;
+	width: 45%;
+	margin: 10px 10px;
+	float: right;
+}
+.contenedor-video2 h2{
+	color: #F47920;
+	margin: 20px 0px;
+}
