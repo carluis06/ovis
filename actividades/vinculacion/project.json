@@ -1,0 +1,25 @@
+{
+  "title": "vinculacion",
+  "date": "26/10/17",
+  "description": {
+    "es": ""
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "vinculacion.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "vinculacion.jclic",
+    "vinculacion.jclic.js"
+  ]
+}

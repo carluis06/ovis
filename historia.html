@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Historia, conceptos y declaración de variables</title>
+</head>
+<body>
+<div class="contenedor-global">
+	<nav>
+		<ul>
+			<li><a class="tamaño-titulo" href="index.html">Programación WEB</a></li>
+			<li style="float: right;"><a href="#">Autores</a></li>
+			<li style="float: right;"><a href="#">Actividades</a>
+				<ul>
+					<li><a href="actividad_uno.html">1° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_dos.html">2° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_tres.html">3° Actividad de Refuerzo</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="#">Multimedia</a>
+				<ul>
+					<li><a href="multiphp.html">PHP</a></li>
+					<li><a href="multiphpmysql.html">PHP y MySQL</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a class="active" href="#">Lecturas</a>
+				<ul>
+					<li><a class="active" href="historia.html">Historia, concepto y variables</a></li>
+					<li><a href="operadores.html">Operadores y condicionales</a></li>
+					<li><a href="bucles.html">Bucles y Funciones</a></li>
+					<li><a href="metodos.html">Metodos GET y POST</a></li>
+					<li><a href="vinculacion.html">Vinculación con la DB</a></li>
+					<li><a href="crud.html">CRUD</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="index.html">Inicio</a></li>
+		</ul>
+	</nav>
+
+	<div style="display: inline;">
+		<img style="margin: 10px 0px;" src="img/logounad3.png">
+	</div>
+
+	<div class="encabezado">
+		<p class="parrafo-encabezado">Escuela de Ciencias Básicas, Tecnología e Ingeniería</p>
+	</div>
+
+	<div class="contenedor-lectura">
+		<div class="contenedor-espacio-lectura">
+
+			<h2 class="titulo">¿ Que es PHP ?</h2>
+
+			<p>PHP es un lenguaje de programación de uso general de script del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico. Fue uno de los primeros lenguajes de programación del lado del servidor que se podían incorporar directamente en el documento HTML en lugar de llamar a un archivo externo que procese los datos. El código es interpretado por un servidor web con un módulo de procesador de PHP que genera la página Web resultante. PHP ha evolucionado por lo que ahora incluye también una interfaz de línea de comandos que puede ser usada en aplicaciones gráficas independientes. PHP puede ser usado en la mayoría de los servidores web al igual que en casi todos los sistemas operativos y plataformas sin ningún costo (Sanjinez, 2012).</p>
+
+			<h2 class="titulo">Historia y evolución de PHP. (Rodriguez, 2016)</h2>
+
+			<div style="text-align: center;">
+
+				<img src="img/php.png">
+				<p class="parrafos-figuras">Figura 1. Logo de PHP.</p>
+
+			</div>
+
+			<p class="parrafos">Fue originalmente diseñado en Perl, con base en la escritura de un grupo de CGI binarios escritos en el lenguaje C por el programador danés-canadiense Rasmus Lerdorf en el año 1994 para mostrar su currículum vítae y guardar ciertos datos, como la cantidad de tráfico que su página web recibía. El 8 de junio de 1995 fue publicado "Personal Home Page Tools" después de que Lerdorf lo combinara con su propio Form Interpreter para crear PHP/FI.</p>
+
+			<h2 class="titulo">Evolución cronologica de PHP</h2>
+
+			<h4 class="titulo">Junio 8, 1995 PHP 1.0</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php1.png">
+				<p class="parrafos-figuras">Figura 2. Logo de PHP 1.0.</p>
+
+			</div>
+			<p class="parrafos">Oficialmente llamado "Herramientas personales de trabajo (PHP Tools)".Es el primer uso del nombre "PHP".</p>
+
+			<h4 class="titulo">Abril 16, 1996 PHP 2.0</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php2.png">
+				<p class="parrafos-figuras">Figura 3. Logo de PHP 2.0.</p>
+
+			</div>
+		
+			<p class="parrafos">Considerado por el creador como la "más rápida y simple herramienta" para la creación de páginas webs dinámicas.</p>
+
+			<h4 class="titulo">Junio 6, 1998 PHP 3.0</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php3.png">
+				<p class="parrafos-figuras">Figura 4. Logo de PHP 3.0.</p>
+
+			</div>
+		
+			<p class="parrafos">Desarrollo movido de una persona a muchos desarrolladores. ZeevSuraski y Andi Gutmans reescriben la base para esta versión.</p>
+
+			<h4 class="titulo">Mayo 22, 2000 PHP 4.0</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php4.png">
+				<p class="parrafos-figuras">Figura 5. Logo de PHP 4.0.</p>
+
+			</div>
+		
+			<p class="parrafos">Se añadió un sistema de parsing de dos fases llamado motor Zend.</p>
+
+			<h4 class="titulo">Diciembre 10, 2001 PHP 4.1</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php4-1.png">
+				<p class="parrafos-figuras">Figura 6. Logo de PHP 4.1.</p>
+
+			</div>
+		
+			<p class="parrafos">Introducidas las variables superglobals ($_GET, $_SESSION, etc.).</p>
+
+			<h4 class="titulo">Abril 22, 2002 PHP 4.2</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php4-2.png">
+				<p class="parrafos-figuras">Figura 7. Logo de PHP 4.2.</p>
+
+			</div>
+		
+			<p class="parrafos">Se deshabilitan register_globals por defecto. Datos recibidos por la red no son insertados en el espacio de nombres global, cerrando posibles agujeros de seguridad en las aplicaciones.</p>
+
+			<h4 class="titulo">Julio 13, 2004 PHP 5.0</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5.png">
+				<p class="parrafos-figuras">Figura 8. Logo de PHP 5.0.</p>
+
+			</div>
+		
+			<p class="parrafos">Motor Zend II con un nuevo modelo de objetos.</p>
+
+			<h4 class="titulo">Noviembre 25, 2005 PHP 5.1</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5-1.png">
+				<p class="parrafos-figuras">Figura 9. Logo de PHP 5.1.</p>
+
+			</div>
+		
+			<p class="parrafos">Mejoras de rendimiento con la introducción de variables de compilador para el nuevo motor de PHP.</p>
+
+			<h4 class="titulo">Noviembre 2, 2006 PHP 5.2</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5-2.png">
+				<p class="parrafos-figuras">Figura 10. Logo de PHP 5.2.</p>
+
+			</div>
+		
+			<p class="parrafos">Habilitado el filtro de extensiones por defecto.</p>
+
+			<h4 class="titulo">Junio 30, 2009 PHP 5.3</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5-3.png">
+				<p class="parrafos-figuras">Figura 11. Logo de PHP 5.3.</p>
+
+			</div>
+		
+			<p class="parrafos">Esta versión es una mejora importante en la serie 5.X, que incluye un gran número de nuevas características y correcciones de errores.</p>
+
+			<h4 class="titulo">Marzo 1, 2012 PHP 5.4</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5-4.png">
+				<p class="parrafos-figuras">Figura 12. Logo de PHP 5.4.</p>
+
+			</div>
+		
+			<p class="parrafos">Este lanzamiento es un gran paso adelante en la serie 5.x, e incluye un gran número de nuevas características y correcciones de errores.Nueva sintaxis del lenguaje incluyendo rasgos , acortada matriz sintaxis y más.</p>
+
+			<h4 class="titulo">Junio 20, 2013 PHP 5.5</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5-5.png">
+				<p class="parrafos-figuras">Figura 13. Logo de PHP 5.5.</p>
+
+			</div>
+		
+			<p class="parrafos">Nuevos generadores para bucles, empty() soporta expresiones. Se pierde el soporte para Windows XP y Windows Server 2003.</p>
+
+			<h4 class="titulo">Agosto 20, 2014 PHP 5.6</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php5-6.png">
+				<p class="parrafos-figuras">Figura 14. Logo de PHP 5.6.</p>
+
+			</div>
+		
+			<p class="parrafos">Esta nueva versión viene con nuevas características, algunos cambios y muchas mejoras. Expresiones escalares constantes.</p>
+
+			<h4 class="titulo">Noviembre 3, 2015 PHP 7</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php7.png">
+				<p class="parrafos-figuras">Figura 15. Logo de PHP 7.</p>
+
+			</div>
+		
+			<p class="parrafos">Mejor rendimiento,nuevo operador de comparación llamado Spaceship operator, y se usa de la misma forma que los operadores tradicionales.</p>
+
+			<h4 class="titulo">Declaración y tipos de variables en PHP</h4>
+		
+			<p class="parrafos">En PHP las variables se representan con un signo de dólar seguido por el nombre de la variable. El nombre de la variable es sensible a minúsculas y mayúsculas (Página oficial de PHP (s.f.)).</p>
+
+			<div style="text-align: center;">
+
+				<img src="img/declaracionvariables.png">
+				<p class="parrafos-figuras">Figura 16. Declaración y tipos de variables en PHP.</p>
+
+			</div>
+
+			<h4 class="titulo">Tipos de variables</h4>
+		
+			<p class="parrafos">PHP admite nueve tipos primitivos.</p>
+
+			<ul style="margin: 20px;">
+				<li>Cuatro tipos escalares
+					<ul style="margin: 10px;">
+						<li>Boolean</li>
+						<li>Integer</li>
+						<li>Float (número de punto flotante, también conocido como double)</li>
+						<li>String</li>
+					</ul>
+				</li>
+				<li>Cuatro tipos compuestos
+					<ul style="margin: 10px;">
+						<li>Array</li>
+						<li>Objects</li>
+						<li>Callable</li>
+						<li>Iterable</li>
+					</ul>
+				</li>
+				<li>Un tipo especial
+					<ul style="margin: 10px;">
+						<li>Null</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p class="parrafos">El tipo de una variable usualmente no lo declara el programador; al contrario, es decidido en tiempo de ejecución por PHP dependiendo del contexto en el que se emplea dicha variable (Página oficial de PHP (s.f.)).</p>
+
+			<hr class="espacio-referencia">
+
+			<h2 class="titulo">Referencias</h2>
+
+			<p class="parrafos">1. Sanjinez Viera, Alonso Eduardo. (21 de noviembre del 2012). Concepto PHP. [Mensaje de un blog]. Recuperado de http://phpconceptoalonso.blogspot.com.co/</p>
+
+			<p class="parrafos">2. Rodriguez, Jhonatan. (2016). Historia y evolución PHP. Recuperado de  https://www.timetoast.com/timelines/historia-y-evolucion-de-php</p>
+
+			<p class="parrafos">3. Pagina oficial de PHP. (s.f.). Conceptos básicos. Recuperado de http://php.net/manual/es/language.variables.basics.php </p>
+
+			<p class="parrafos">4. Pagina oficial de PHP. (s.f.). Introduccón. Recuperado de http://php.net/manual/es/language.types.intro.php </p>
+
+		</div>
+
+	</div>
+</div>	
+</body>
+</html>

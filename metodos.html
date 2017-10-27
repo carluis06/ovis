@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Metodos GET y POST</title>
+</head>
+<body>
+<div class="contenedor-global">
+	<nav>
+		<ul>
+			<li><a class="tamaño-titulo" href="index.html">Programación WEB</a></li>
+			<li style="float: right;"><a href="#">Autores</a></li>
+			<li style="float: right;"><a href="#">Actividades</a>
+				<ul>
+					<li><a href="actividad_uno.html">1° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_dos.html">2° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_tres.html">3° Actividad de Refuerzo</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="#">Multimedia</a>
+				<ul>
+					<li><a href="multiphp.html">PHP</a></li>
+					<li><a href="multiphpmysql.html">PHP y MySQL</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a class="active" href="#">Lecturas</a>
+				<ul>
+					<li><a href="historia.html">Historia, concepto y variables</a></li>
+					<li><a href="operadores.html">Operadores y condicionales</a></li>
+					<li><a href="bucles.html">Bucles y Funciones</a></li>
+					<li><a class="active" href="metodos.html">Metodos GET y POST</a></li>
+					<li><a href="vinculacion.html">Vinculación con la DB</a></li>
+					<li><a href="crud.html">CRUD</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="index.html">Inicio</a></li>
+		</ul>
+	</nav>
+
+	<div style="display: inline;">
+		<img style="margin: 10px 0px;" src="img/logounad3.png">
+	</div>
+
+	<div class="encabezado">
+		<p class="parrafo-encabezado">Escuela de Ciencias Básicas, Tecnología e Ingeniería</p>
+	</div>
+
+	<div class="contenedor-lectura">
+
+		<div class="contenedor-espacio-lectura">
+
+			<h2 class="titulo">Metodo GET y POST (Manual de Programación en PHP (s.f.))</h2>
+
+			<p class="parrafos">El lenguaje PHP nos proporciona una manera sencilla de manejar formularios, permitiéndonos de esta manera procesar la información que el usuario ha introducido. Al diseñar un formulario debemos indicar la página PHP que procesará el formulario, así como el método por el que se le pasará la información a la página. Los dos métodos posibles son GET y POST. La diferencia entre estos dos métodos radica en la forma de enviar los datos a la página, mientras que el método GET envía los datos usando la URL, el método POST los envía por la entrada estándar STDIO.</p>
+
+			<h4>metodo GET</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/metodoget.png">
+				<p class="parrafos-figuras">Figura 1. Metodo GET en PHP, manera de llamar al Metodo desde un Formulario HTML.</p>
+
+			</div>
+
+			<p class="parrafos">Al pulsar el botón Enviar el contenido de cuadro de texto es enviado a la página que indicamos en el atributo ACTION de la etiqueta FORM. PHP crea una variable por cada elemento del FORM, esta variable creada tiene el mismo nombre que el cuadro de texto de la página anterior y el valor que hayamos introducido. En este ejemplo se ha creado una variable llamada $nombre con el valor que haya introducido el navegante.</p>
+
+			<h4>Metodo POST</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/metodopost.png">
+				<p class="parrafos-figuras">Figura 2. Metodo POST en PHP, manera de llamar al Metodo desde un Formulario HTML.</p>
+
+			</div>
+
+			<p class="parrafos">El resultado final es el mismo, solo que con el método GET podemos ver los parámetros pasados ya que están codificados en la URL.</p>
+
+			<hr class="espacio-referencia">
+
+			<h2 class="titulo">Referencias</h2>
+
+			<p class="parrafos">1. Manual de Programación en PHP. (s.f.). Metodos GET y POST. Recuperado de https://www.mundomanuales.com/manuales/3144.pdf</p>
+
+		</div>
+
+	</div>
+</div>		
+</body>
+</html>

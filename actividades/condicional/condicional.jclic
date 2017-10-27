@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="condicional" version="0.1.3">
+ <settings>
+  <title>condicional</title>
+  <revision description="created" date="10/24/17" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+ </settings>
+ <sequence>
+  <item id="start" name="condicional" />
+ </sequence>
+ <activities>
+  <activity class="@text.FillInBlanks" name="condicional" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0xF0B429" background="0x005883" />
+     </style>
+     <p>escoje de cada lista la respuesta correcta</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xF0B429" background="0x005883" />
+     </style>
+     <p>¡FELICIDADES! lo has logrado</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="780" height="435" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" tabWidth="12" size="20" bold="false" italic="false" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text>los operadores aritmeticos son</text>
+      <target>
+       <answer>+  -  *  /  %</answer>
+       <optionList>
+        <option>+  -  *  /  %  &gt;</option>
+        <option>+  -  *  /  %</option>
+        <option>&lt;  &gt;  ==  !  *</option>
+       </optionList>
+       <text>:</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text>la manera correcta de utilizar los operadores de comparación es</text>
+      <target>
+       <answer>$a &gt; $b; $a == $b</answer>
+       <optionList>
+        <option>$a (&gt;) $b; $a &gt; ($b)</option>
+        <option>$a &gt;! $b; ($a &gt;) $b</option>
+        <option>$a &gt; $b; $a == $b</option>
+       </optionList>
+       <text>:</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text>el condicional if se declara de la siguiente manera</text>
+      <target>
+       <answer>if ($a &gt; $b) {echo "hola mundo"};</answer>
+       <optionList>
+        <option>if ($a &gt; $b) {echo "hola mundo"};</option>
+        <option>if ($a &gt; $b) echo ok</option>
+        <option>if ($a &gt; $b) echo "hola mundo";</option>
+       </optionList>
+       <text>:</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text>el operador que se utiliza para saber si dos variables son del mismo tipo es</text>
+      <target>
+       <answer>===</answer>
+       <optionList>
+        <option>!==</option>
+        <option>===</option>
+        <option>&gt;</option>
+        <option>*</option>
+       </optionList>
+       <text>:</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text>los operadores logicos se utilizan para</text>
+      <target>
+       <answer>evaluar varias comparaciones</answer>
+       <optionList>
+        <option>concatenar varias comparaciones</option>
+        <option>evaluar varias comparaciones</option>
+        <option>sumar varias comparaciones</option>
+       </optionList>
+       <text>:</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag />
+</JClicProject>
+

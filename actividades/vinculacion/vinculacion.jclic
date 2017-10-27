@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="vinculacion" version="0.1.3">
+ <settings>
+  <title>vinculacion</title>
+  <revision description="created" date="10/26/17" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+ </settings>
+ <sequence>
+  <item id="start" name="vinculacion" />
+ </sequence>
+ <activities>
+  <activity class="@text.Order" name="vinculacion" code="" type="orderWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color foreground="0xF0B429" background="0x005883" />
+     </style>
+     <p>organizar las palabras que estan mal ubicadas para descifrar el texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xF0B429" background="0x005883" />
+     </style>
+     <p>¡FELICIDADES! LO HAS LOGRADO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x005883">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true">
+     <size width="900" height="551" />
+    </window>
+   </settings>
+   <checkButton>revisar las respuestas</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" tabWidth="12" size="20" bold="false" italic="false" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">PARA TRABAJAR LA </text>
+      <target>VINCULACION</target>
+      <text family="Arial" background="0xFFFFFF"> CON BASES DE DATOS CON PHP NECESITAMOS DE UNAS HERRAMIENTAS DE </text>
+      <target>SOFTWARE</target>
+      <text family="Arial" background="0xFFFFFF"> QUE PERMITAN DICHA VINCULACION.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">NECESITAMOS UN EDITOR DE TEXTO COMO </text>
+      <target>SUBLIMETEXT</target>
+      <text family="Arial" background="0xFFFFFF"> Y ATOM, UN GESTOR DE BASE DE DATOS COMO </text>
+      <target>MYSQL</target>
+      <text family="Arial" background="0xFFFFFF"> Y ORACLE, UN PAQUETE DE SERVIDOR LOCAL COMO APPSERV Y </text>
+      <target>XAMMP,</target>
+      <text family="Arial" background="0xFFFFFF"> Y UN LENGUAJE DE </text>
+      <target>PROGRAMACION</target>
+      <text family="Arial" background="0xFFFFFF"> QUE PARA ESTE CASO ES PHP.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">EL PAQUETE DE SERVIDOR LOCAL ES EL QUE NOS PROVE DE LA MAYORIA DE ESTOS </text>
+      <target>REQUISITOS</target>
+      <text family="Arial" background="0xFFFFFF"> YA QUE CONTIENE UN SERVIDOR LLAMADO </text>
+      <target>APACHE,</target>
+      <text family="Arial" background="0xFFFFFF"> UN LENGUAJE COMO PHP Y UN GESTOR DE BASES DE DATOS COMO </text>
+      <target>MySQL</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">EXISTEN TRES FUNCIONES PARA LA CONEXION CON LA BASE DE DATOS, </text>
+      <target>MYSQL_CONNECT</target>
+      <text family="Arial" background="0xFFFFFF"> PERMITE REALIZAR UNA CONEXION CON EL SERVIDOR PERO NO CON LA BASE DE DATOS, PARA ELLO SE UTILIZA OTRA FUNCION LLAMADA </text>
+      <target>MYSQL_SELECT_DB.</target>
+      <text family="Arial" background="0xFFFFFF"> LA FUNCION </text>
+      <target>MYSQLI_CONNECT</target>
+      <text family="Arial" background="0xFFFFFF"> REALIZA AMBAS CONEXIONES EN UNA SOLA LINEA DE CODIGO, Y LA FUNCION </text>
+      <target>PDO</target>
+      <text family="Arial" background="0xFFFFFF"> CREA UNA INSTANCIA DE LA CLASE PARA LA CONEXION CON LA BASE DE DATOS.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag />
+</JClicProject>
+

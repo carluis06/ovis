@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Vinculación con DB</title>
+</head>
+<body>
+<div class="contenedor-global">
+	<nav>
+		<ul>
+			<li><a class="tamaño-titulo" href="index.html">Programación WEB</a></li>
+			<li style="float: right;"><a href="#">Autores</a></li>
+			<li style="float: right;"><a href="#">Actividades</a>
+				<ul>
+					<li><a href="actividad_uno.html">1° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_dos.html">2° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_tres.html">3° Actividad de Refuerzo</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="#">Multimedia</a>
+				<ul>
+					<li><a href="multiphp.html">PHP</a></li>
+					<li><a href="multiphpmysql.html">PHP y MySQL</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a class="active" href="#">Lecturas</a>
+				<ul>
+					<li><a href="historia.html">Historia, concepto y variables</a></li>
+					<li><a href="operadores.html">Operadores y condicionales</a></li>
+					<li><a href="bucles.html">Bucles y Funciones</a></li>
+					<li><a href="metodos.html">Metodos GET y POST</a></li>
+					<li><a class="active" href="vinculacion.html">Vinculación con la DB</a></li>
+					<li><a href="crud.html">CRUD</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="index.html">Inicio</a></li>
+		</ul>
+	</nav>
+
+	<div style="display: inline;">
+		<img style="margin: 10px 0px;" src="img/logounad3.png">
+	</div>
+
+	<div class="encabezado">
+		<p class="parrafo-encabezado">Escuela de Ciencias Básicas, Tecnología e Ingeniería</p>
+	</div>
+
+	<div class="contenedor-lectura">
+
+		<div class="contenedor-espacio-lectura">
+
+			<h2 class="titulo">Vinculación con la DB</h2>
+
+			<h4>Requisitos de software necesarios para la conexión y administración de la base de datos con PHP.</h4>
+
+			<p class="parrafos">Para trabajar PHP con una vinculación a las bases de datos necesitaremos de ciertas herramientas de software que permiten que dicha vinculación sea exitosa.</p>
+
+			<p class="parrafos">Las herramientas son:</p>
+
+			<h4 class="titulo">PHP</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/php.png">
+				<p class="parrafos-figuras">Figura 1. Lenguaje de PRogramación PHP.</p>
+
+			</div>
+
+			<h4 class="titulo">Un gestor de base de datos como MySQL, ORACLE, etc.</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/mysql.png">
+				<img src="img/oracle.png">
+				<p class="parrafos-figuras">Figura 2. Gestores de Bases de Datos MySQL y ORACLE.</p>
+
+			</div>
+
+
+			<h4 class="titulo">Un editor de código como sublime text, atom, etc.</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/sublime.jpg">
+				<img src="img/atom.jpg">
+				<p class="parrafos-figuras">Figura 3. Editores de Codigo Sublime Text y Atom.</p>
+
+			</div>
+
+			<h4 class="titulo">Un paquete de servidor local como Appserv, Xammp, etc.</h4>
+
+			<div style="text-align: center;">
+
+				<img src="img/appserv.png">
+				<img src="img/xammp.png">
+				<p class="parrafos-figuras">Figura 4. Paquetes de Servidores Locales Appserv y Xammp.</p>
+
+			</div>
+
+			<p class="parrafos">El paquete de servidor local es el que nos proveerá de la mayoría de requisitos para poder trabajar PHP con base de datos, ya que contienen PHP, un gestor de base de datos y  el área de trabajo donde se muestra lo que vamos haciendo en el código.</p>
+
+			<h4 class="titulo">Funciones para conexión a la base de datos desde PHP con MySQL. (Pagina oficial de PHP (s.f.))</h4>
+
+			<p class="parrafos">El paquete de servidor local es el que nos proveerá de la mayoría de requisitos para poder trabajar PHP con base de datos, ya que contienen PHP, un gestor de base de datos y  el área de trabajo donde se muestra lo que vamos haciendo en el código.</p>
+
+			<p class="parrafos">De manera sencilla se pueden destacar tres funciones que permiten establecer una conexión con la base de datos desde un proyecto PHP.</p>
+
+			<h4 class="titulo">Mysql_connect (mysql_connect (s.f.))</h4>
+
+			<p class="parrafos">Permite conectar al servidor y al gestor de base de datos, recibiendo los parámetros de servidor, usuario, contraseña. A su vez permite conectar con la base de datos usando la función mysql_select_db de la siguiente manera:</p>
+
+			<div style="text-align: center;">
+
+				<img src="img/mysqlconnect.png">
+				<p class="parrafos-figuras">Figura 5. Ejemplo de Conexión a la DB con la Función mysql_connect.</p>
+
+			</div>
+
+			<h4 class="titulo">Mysqli_connect (mysqli_connect (s.f.))</h4>
+
+			<p class="parrafos">A diferencia de la función anterior este recibe un cuarto parámetro que es la base de datos permitiendo en una sola función realizar todas las conexiones necesarias para la vinculación de la siguiente manera:</p>
+
+			<div style="text-align: center;">
+
+				<img src="img/mysqliconnect.png">
+				<p class="parrafos-figuras">Figura 5. Ejemplo de Conexión a la DB con la Función mysqli_connect.</p>
+
+			</div>
+
+			<h4 class="titulo">PDO (Conexiones y su Administración (s.f.))</h4>
+
+			<p class="parrafos">Las conexiones se establecen creando instancias de la clase base PDO. No importa el controlador que se utilice; siempre se usará el nombre de la clase PDO. El constructor acepta parámetros para especificar el origen de la base de datos y, opcionalmente, el nombre de usuario y la contraseña.</p>
+
+			<div style="text-align: center;">
+
+				<img src="img/pdo.png">
+				<p class="parrafos-figuras">Figura 5. Ejemplo de Conexión a la DB con la Función PDO.</p>
+
+			</div>
+
+			<hr class="espacio-referencia">
+
+			<h2 class="titulo">Referencias</h2>
+
+			<p class="parrafos">1. Pagina Oficial de PHP. (s.f.). mysql_connect. Recuperado de http://php.net/manual/es/function.mysql-connect.php</p>
+
+			<p class="parrafos">2. Pagina Oficial de PHP. (s.f.). mysqli_connect. Recuperado de http://php.net/manual/es/function.mysqli-connect.php</p>
+
+			<p class="parrafos">3. Pagina Oficial de PHP. (s.f.). PDO. Recuperado de http://php.net/manual/es/pdo.connections.php</p>
+
+		</div>
+	
+	</div>
+
+</div>		
+</body>
+</html>

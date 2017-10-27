@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Crud</title>
+</head>
+<body>
+<div class="contenedor-global">
+	<nav>
+		<ul>
+			<li><a class="tamaño-titulo" href="index.html">Programación WEB</a></li>
+			<li style="float: right;"><a href="#">Autores</a></li>
+			<li style="float: right;"><a href="#">Actividades</a>
+				<ul>
+					<li><a href="actividad_uno.html">1° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_dos.html">2° Actividad de Refuerzo</a></li>
+					<li><a href="actividad_tres.html">3° Actividad de Refuerzo</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="#">Multimedia</a>
+				<ul>
+					<li><a href="multiphp.html">PHP</a></li>
+					<li><a href="multiphpmysql.html">PHP y MySQL</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a class="active" href="#">Lecturas</a>
+				<ul>
+					<li><a href="historia.html">Historia, concepto y variables</a></li>
+					<li><a href="operadores.html">Operadores y condicionales</a></li>
+					<li><a href="bucles.html">Bucles y Funciones</a></li>
+					<li><a href="metodos.html">Metodos GET y POST</a></li>
+					<li><a href="vinculacion.html">Vinculación con la DB</a></li>
+					<li><a class="active" href="crud.html">CRUD</a></li>
+				</ul>
+			</li>
+			<li style="float: right;"><a href="index.html">Inicio</a></li>
+		</ul>
+	</nav>
+
+	<div style="display: inline;">
+		<img style="margin: 10px 0px;" src="img/logounad3.png">
+	</div>
+
+	<div class="encabezado">
+		<p class="parrafo-encabezado">Escuela de Ciencias Básicas, Tecnología e Ingeniería</p>
+	</div>
+
+	<div class="contenedor-lectura">
+
+		<div class="contenedor-espacio-lectura">
+
+			<h2 class="titulo">¿ Que es el CRUD ?</h2>
+
+			<p class="">El concepto CRUD está estrechamente vinculado a la gestión de datos. CRUD hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro operaciones fundamentales de aplicaciones persistentes en sistemas de bases de datos:</p>
+
+			<ul style="margin: 20px;">
+				<li>Create (Crear registros)</li>
+				<li>Read o Retrieve (Leer registros)</li>
+				<li>Update (Actualizar registros)</li>
+				<li>Delete 0 Destroy (Borrar registros)</li>
+			</ul>
+
+			<p class="">En pocas palabras, CRUD resume las funciones requeridas por un usuario para crear y gestionar datos. Varios procesos de gestión de datos están basados en CRUD, en los que dichas operaciones están específicamente adaptadas a los requisitos del sistema y de usuario, ya sea para la gestión de bases de datos o para el uso de aplicaciones. Para los expertos, las operaciones son las herramientas de acceso típicas e indispensables para comprobar, por ejemplo, los problemas de la base de datos, mientras que para los usuarios, CRUD significa crear una cuenta (créate) y utilizarla (read), actualizarla (update) o borrarla (delete) en cualquier momento (Digital Guide, 2017).</p>
+
+			<p class="parrafos">Las instrucciones más habituales son SELECT, INSERT, UPDATE, DELETE. Veamos su sintaxis básica y algunos ejemplos de uso. Para ello utilizaremos una tabla noticias con cinco campos: (González (s.f.)).</p>
+
+			<div style="text-align: center;">
+
+				<img src="img/tablacrud.png">
+				<p class="parrafos-figuras">Figura 1. Tabla Ejemplo para el manejo del CRUD.</p>
+
+			</div>
+
+			<p class="parrafos">Los campos de la tabla son:</p>
+
+			<p class="">Un identificador único de la noticia, el título de la noticia, el texto de la noticia, la categoría de la noticia y la fecha de publicación de la noticia </p>
+		
+			<h3 class="titulo">Lenguaje SQL</h3>
+
+			<h4>Sentencia SELECT</h4>
+
+			<p class="parrafos">Sintaxis: SELECT (campo de la tabla) o (*) FROM tabla WHERE (condición);</p>
+
+			<p class="">Ejemplo:</p>
+
+			<p class="parrafos">SELECT * from noticias WHERE fecha = NOW;</p>
+
+			<p class="">En este ejemplo estamos pidiendo que nos muestre todas las noticias publicadas el dia de hoy.</p>
+
+			<h4 class="titulo">Sentencia INSERT</h4>
+
+			<p class="">Sintaxis: INSERT [INTO] nombre_tabla [(nombre_columna1),(nombre_columna2)....(nombre_columnaN)] VALUES ((dato de la columna), (dato de la columna)....;</p>
+
+			<p class="parrafos">Ejemplo:</p>
+
+			<p class="">INSERT INTO noticias (id, titulo, texto, categoria, fecha) VALUES (37, “Nueva promoción en Nervión”, “145 viviendas de lujo en urbanización ajardinada situadas en un entorno privilegiado”, “promociones”, NOW);</p>
+
+			<p class="parrafos">En este ejemplo le estamos diciendo que inserte un registro de acuerdo a los parametros dados.</p>
+
+			<h4>Sentencia UPDATE</h4>
+
+			<p class="parrafos">Sintaxis: UPDATE nombre_tabla SET nombre_columna1=(lo que quieras cambiar) [, nombre_columna2=(lo que quieras cambiar) ...] WHERE (condición) ;</p>
+
+			<p class="">Ejemplo:</p>
+
+			<p class="parrafos">UPDATE noticias SET categoria = “ofertas” WHERE id=37;</p>
+
+			<p class="">En este ejemplo le estamos diciendo que modifique la cateogira de noticias con el id igual a 37.</p>
+
+			<h4 class="titulo">Sentencia DELETE</h4>
+
+			<p class="">Sintaxis: DELETE (columna) FROM nombre_tabla WHERE (condición);</p>
+
+			<p class="parrafos">Ejemplo:</p>
+
+			<p class="">DELETE FROM noticias WHERE fecha = NOW;</p>
+
+			<p class="parrafos">En este ejemplo le estamos diciendo que elimine las noticias que hayan sido publicadas hoy.</p>
+
+			<hr class="espacio-referencia">
+
+			<h2 class="titulo">Referencias</h2>
+
+			<p class="parrafos">1. Digital Guide. (20 de Junio de 2017). CRUD: La base de la gestión de datos. Recuperado de https://www.1and1.es/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/</p>
+
+			<p class="parrafos">2. González Romano, José Mariano. (s.f.). Desarrollo de sitios Web con PHP y MySQL. Acceso a Bases de Datos MySQL en PHP. Recuperado de http://www.lsi.us.es/cursos/cursophp/apuntes/tema4.pdf</p>
+
+		</div>
+			
+	</div>
+
+
+</div>	
+</body>
+</html>
