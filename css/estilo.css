@@ -217,35 +217,40 @@ nav li li{
 
 /* ESTILO PARA LAS ACTIVIDADES */
 
+.contenedor-leyenda{
+	text-align: justify;
+	margin: 50px 0px;
+	font-size: 20px;
+}
 .contenedor-link1{
+	margin-right: 3px;
 	border-radius: 10px;
-	width: 45%;
+	width: 35%;
 	float: left;
 	background: #005883;
 	margin-top: 50px;
-	padding: 0px 0px;
 }
 .contenedor-link2{
+	margin-left: 3px;
 	border-radius: 10px;
-	width: 45%;
+	width: 35%;
 	float: right;
 	background: #005883;
 	margin-top: 50px;
-	padding: 0px 0px;
 }
 .contenedor-link1 a{
-	font-size: 40px;
+	font-size: 20px;
 	text-align: center;
 	color: #f0b429;
-	padding: 60px 40px;
+	padding: 40px 20px;
 	display: block;
 	text-decoration: none;
 }
 .contenedor-link2 a{
-	font-size: 40px;
+	font-size: 20px;
 	text-align: center;
 	color: #f0b429;
-	padding: 60px 40px;
+	padding: 40px 20px;
 	display: block;
 	text-decoration: none;
 }
@@ -279,4 +284,33 @@ nav li li{
 .contenedor-video2 h2{
 	color: #F47920;
 	margin: 20px 0px;
+}
+
+/* ESTILOS PARA AUTOR  */
+
+.contenedor-autor{
+	margin: auto;
+	margin-top: 40px;
+	width: 33%;
+	border-radius: 10px;
+	padding: 40px;
+	background: #f6f6f6;
+}
+.contenedor-autor h3{
+	border-radius: 5px;
+	text-align: justify;
+	padding: 8px;
+	margin-top: 2px;
+	background: #005883;
+	color: #F47920;
+}
+.contenedor-autor span{
+	text-align: justify;
+	padding: 8px;
+	margin-top: 2px;
+	color: #f0b429;
+}
+.contenedor-foto{
+	margin-bottom: 20px;
+	text-align: center;
 }
